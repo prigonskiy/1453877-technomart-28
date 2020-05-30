@@ -94,7 +94,7 @@
     </header>
     <main>
       <section>
-        <h2>Промо</h2> <!--верхний блок с промо-->
+        <h2 class="visually-hidden">Промо</h2> <!--верхний блок с промо-->
         <ul>
           <li>
             <span>New</span>
@@ -124,12 +124,10 @@
         </ul>
         <ul>
           <li>
-            <img src="https://via.placeholder.com/620x266" width="620" height="266" alt="Перфораторы — настоящие мужские игрушки">
             <h3>Перфораторы</h3><br>
             <p>Настоящие мужские игрушки</p>
           </li>
           <li>
-            <img src="https://via.placeholder.com/620x266" width="620" height="266" alt="Дрели — соседям на радость!">
             <h3>Дрели</h3>
             <p>соседям на радость!</p>
           </li>
@@ -202,44 +200,28 @@
         </div>
         <ul>
           <li>
-            <a href="catalog.html">
-              <img src="https://via.placeholder.com/220x145" width="220" height="145" alt="Bosch">
-            </a>
+            <a href="catalog.html" title="Bosch">Bosch</a>
           </li>
           <li>
-            <a href="catalog.html">
-              <img src="https://via.placeholder.com/220x145" width="220" height="145" alt="Makita">
-            </a>
+            <a href="catalog.html" title="Makita">Makita</a>
           </li>
           <li>
-            <a href="catalog.html">
-              <img src="https://via.placeholder.com/220x145" width="220" height="145" alt="DeWalt">
-            </a>
+            <a href="catalog.html" title="DeWALT">DeWALT</a>
           </li>
           <li>
-            <a href="catalog.html">
-              <img src="https://via.placeholder.com/220x145" width="220" height="145" alt="Интерскол">
-            </a>
+            <a href="catalog.html" title="Интерскол">Интерскол</a>
           </li>
           <li>
-            <a href="catalog.html">
-              <img src="https://via.placeholder.com/220x145" width="220" height="145" alt="Hitachi">
-            </a>
+            <a href="catalog.html" title="Hitachi">Hitachi</a>
           </li>
           <li>
-            <a href="catalog.html">
-              <img src="https://via.placeholder.com/220x145" width="220" height="145" alt="LG">
-            </a>
+            <a href="catalog.html" title="LG">LG</a>
           </li>
           <li>
-            <a href="catalog.html">
-              <img src="https://via.placeholder.com/220x145" width="220" height="145" alt="AEG">
-            </a>
+            <a href="catalog.html" title="AEG">AEG</a>
           </li>
           <li>
-            <a href="catalog.html">
-              <img src="https://via.placeholder.com/220x145" width="220" height="145" alt="Metabo">
-            </a>
+            <a href="catalog.html" title="Metabo">Metabo</a>
           </li>
         </ul>
         <section>
@@ -323,7 +305,31 @@
         <p>Разработано — <a href="https://htmlacademy.ru">https://htmlacademy.ru/intensive/htmlcss</a></p>
       </div>
     </footer>
-    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
 
+    <section>
+      <h2 class="visually-hidden">Обратная связь</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div>
+            <label for="feedback-name">Ваше имя:</label>
+            <input id="feedback-name" type="text" placeholder="Имя Фамилия">
+          </div>
+          <div>
+            <label for="feedback-mail">Ваш e-mail:</label>
+            <input id="feedback-name" type="email" placeholder="email@example.com">
+          </div>
+          <div>
+            <label for="feedback-feedback">Текст письма</label>
+            <textarea id="feedback-feedback" placeholder="В свободной форме"></textarea>
+          </div>
+          <button type="submit">Оформить заказ</button>
+        </form>
+      <button type="button">Закрыть</button>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Карта</h2>
+      <img src="img/content_map-full.jpg" width="943" height="449">
+      <button type="button">Закрыть</button>
+    </section>
+    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
   </body>
 </html>
