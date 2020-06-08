@@ -1,0 +1,321 @@
+:root {
+    --basic-red: #EE3643;
+    --basic-green: #63A63E;
+    --basic-grey: #3D546F;
+    --basic-greylight: #C5C5C5;
+    --basic-grey-price: #A9A9A9;
+    --basic-greylight-popular: #F9F5F0;
+    --basic-background: #F1F5F7;
+    --basic-white: #FFFFFF;
+    --basic-blue: #293449;
+    --basic-black: #000000;
+    --sort-grey: #F7F3EC;
+    --blue: #32425C;
+    --special-yellow: #FFBF47;
+    --special-yellow-2: #FFC047;
+    --special-blue: #3BBCE3;
+    --special-lilac: #DC91D8;
+    --special-greenlight: #8ED78F;
+    --special-yellowlight: #FFD180;
+    --success: #5FBB2D;
+    --warning: #FFBF47;
+    --error: #BA2732;
+}
+
+body {
+    background-color: var(--basic-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+.feedback-form-popup {
+    display: none;
+}
+
+.full-map-popup {
+    display: none;
+}
+
+.cart-popup {
+    display: none;
+}
+
+.header-main, .services-block, .perf-about {
+    font-family: 'Cuprum', sans-serif;
+    background-color: var(--basic-background);
+}
+
+.header-top {
+    background-color: var(--basic-blue);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+.search input::placeholder, .header-top button {
+    color: var(--basic-white);
+}
+
+.search input {
+    background-color: var(--basic-blue);
+}
+
+.header-bottom {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.checkout {
+    background-color: var(--basic-green);
+    border: none;
+}
+
+.header-about h1{
+    color: var(--basic-red);
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.header-address a {
+    color: var(--basic-red);
+    font-weight: bold;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 30px;
+    border: 3px solid var(--basic-white);
+    padding-left: 74px;
+    padding-right: 45px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+}
+
+.header-address p {
+    color: var(--blue);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.main-navigation {
+    background-color: var(--basic-blue);
+}
+
+.main-navigation li, .promo-advantages li, .item-cards li, .vendor-cards li, .footer-top li, .footer-mid li, .social-feedback li, .services-detail li, .services-list li, .breadcrumbs li, .filter-form fieldset li, .sort ul li {
+    list-style-type: none;
+}
+
+.main-navigation li {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.main-navigation ul, ul.promo-advantages, ul.item-cards, ul.vendor-cards, .footer-top ul, .footer-mid ul, ul.social-feedback, ul.services-detail, ul.services-list, ul.breadcrumbs, .filters ul, .sort ul {
+    padding: 0;
+    margin: 0;
+}
+
+.main-navigation a {
+    color: var(--basic-white);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.promo-block {
+    font-family: 'Cuprum', sans-serif;
+    color: var(--basic-white);
+}
+
+.promo-advantages h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-style: bold;
+}
+
+.promo-advantages a {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: rgba(255, 255, 255, 0.3);
+    mix-blend-mode: normal;
+    color: var(--basic-white);
+    width: 135px;
+    height: 38px;
+}
+
+li.promo-materials {
+    background-color: var(--special-yellow);
+}
+
+li.promo-instruments {
+    background-color: var(--special-blue);
+}
+
+li.promo-tech {
+    background-color: var(--special-lilac);
+}
+
+li.promo-discounts {
+    background-color: var(--special-greenlight);
+}
+
+li.promo-delivery {
+    background-color: var(--special-yellow-2);
+}
+
+div.popular-header {
+    background-color: var(--basic-greylight-popular);
+    font-family: 'Cuprum', sans-serif;
+}
+
+.popular-header h2, .services-block h2, .services-detail h3, .about h2, .contacts h2, .perf-about h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.popular-header a, .contacts a, .about a {
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+    text-transform: uppercase;
+}
+
+.card-new {
+    font-family: 'Cuprum', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    transform: rotate(45deg);
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+}
+
+.card-name {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: basic-black;
+}
+
+.card-original-price {
+    font-family: 'PT Sans', sans-serif;
+    color: var(--basic-grey-price);
+    text-decoration: line-through;
+}
+
+.card-price {
+    font-family: 'PT Sans', sans-serif;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+}
+
+.services-block p, .about p, .contacts p {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--basic-black);
+}
+
+.about-contacts-block {
+    background-color: var(--basic-white);
+}
+
+.about h2, .contacts h2 {
+    font-family: 'Cuprum', sans-serif;
+    text-transform: uppercase;;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.about ul {
+    font-family: 'Cuprum', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer-main, .footer-top a, .footer-bottom p {
+    font-family: 'Cuprum', sans-serif;
+    color: var(--basic-white);
+}
+
+.footer-top, .footer-mid {
+    background-color: var(--blue);
+}
+
+.footer-bottom {
+    background-color: var(--basic-blue);
+}
+
+.footer-mid a, .footer-bottom a {
+    color: var(--special-yellowlight);
+}
+
+.page-nav a {
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--basic-black);
+}
+
+.filters, .sort {
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.filter-form fieldset {
+    border: 0 none;
+}
+
+.filter-form legend, .sort h4 {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.sort, .filters h4 {
+    background-color: var(--sort-grey);
+}
+
+.header-usernav a {
+    color: var(--basic-black);
+}
+
+.usernav-button {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 21px;
+}
