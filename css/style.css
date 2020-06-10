@@ -5,6 +5,7 @@
     --basic-greylight: #C5C5C5;
     --basic-grey-price: #A9A9A9;
     --basic-greylight-popular: #F9F5F0;
+    --basic-greylight-border: #E5E5E5;
     --basic-background: #F1F5F7;
     --basic-white: #FFFFFF;
     --basic-blue: #293449;
@@ -18,21 +19,10 @@
     --special-greenlight: #8ED78F;
     --special-yellowlight: #FFD180;
     --success: #5FBB2D;
+    --active-green: #518534;
     --warning: #FFBF47;
     --error: #BA2732;
-}
-
-body {
-    background-color: var(--basic-white);
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+    --header-button-active: #161D29;
 }
 
 .visually-hidden {
@@ -58,38 +48,143 @@ img {
     display: none;
 }
 
-.header-main, .services-block, .perf-about {
+body {
+    background-color: var(--basic-white);
     font-family: 'Cuprum', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.list_no_pm {
+    padding: 0;
+    margin: 0;
+}
+
+.list_no_pm li {
+    list-style-type: none;
+}
+
+.red_button {
+    text-transform: uppercase;
+    font-family: 'Cuprum', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+}
+
+.red_button:hover {
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+}
+
+.red_button:active {
+    background-color: var(--error);
+    color: var(--basic-white);
+}
+
+.header-main {
     background-color: var(--basic-background);
 }
 
 .header-top {
     background-color: var(--basic-blue);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 24px;
 }
 
-.search input::placeholder, .header-top button {
-    color: var(--basic-white);
+.header-top-container {
+    display: flex;
+    justify-content: center;
+    height: 42px;
+    min-width: 940px;
+}
+
+.header-logo {
+    background-color: var(--basic-red);
+    width: 220px;
+    height: 47px;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.header-logo:active {
+    background-color: var(--error);
+}
+
+.header-logo img {
+    margin-left: 55px;
+    margin-right: 57px;
+    margin-top: 12px;
+    margin-bottom: 17px;
 }
 
 .search input {
-    background-color: var(--basic-blue);
+    background-color: inherit;
+    width: 271px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 24px;
+    outline: none;
+    border: none;
 }
 
-.header-bottom {
-    font-style: normal;
-    font-weight: normal;
+.search input::placeholder {
+    color: var(--basic-white);
+}
+
+.header-button {
+    width: 150px;
+    height: 42px;
+    color: var(--basic-white);
+    background-color: inherit;
+    border: 0px none;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.cart-red {
+    background-color: var(--basic-red);
 }
 
 .checkout {
     background-color: var(--basic-green);
-    border: none;
 }
 
-.header-about h1{
+.checkout:hover {
+    background-color: var(--success);
+}
+
+.bookmarks:active, .cart:active {
+    background-color: var(--header-button-active);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.checkout:active {
+    background-color: var(--basic-green);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+header-bottom {
+    width: 940px;
+}
+
+.header-bottom-usernav {
+    height: 158px;
+    min-width: 940px;
+}
+
+.header-about {
     color: var(--basic-red);
     font-style: italic;
     font-weight: normal;
@@ -100,8 +195,8 @@ img {
 .header-address a {
     color: var(--basic-red);
     font-weight: bold;
-    font-style: normal;
     font-size: 21px;
+    font-style: normal;
     line-height: 30px;
     border: 3px solid var(--basic-white);
     padding-left: 74px;
@@ -117,42 +212,29 @@ img {
     font-size: 14px;
     line-height: 24px;
 }
-
-.main-navigation {
-    background-color: var(--basic-blue);
+.header-usernav .signin, .header-usernav .signup {
+    font-size: 21px;
+    line-height: 21px;
+    background: rgba(0, 0, 0, 0.0001);
+    border: 0px none;
+    height: 45px;
 }
 
-.main-navigation li, .promo-advantages li, .item-cards li, .vendor-cards li, .footer-top li, .footer-mid li, .social-feedback li, .services-detail li, .services-list li, .breadcrumbs li, .filter-form fieldset li, .sort ul li {
-    list-style-type: none;
-}
-
-.main-navigation li {
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-
-.main-navigation ul, ul.promo-advantages, ul.item-cards, ul.vendor-cards, .footer-top ul, .footer-mid ul, ul.social-feedback, ul.services-detail, ul.services-list, ul.breadcrumbs, .filters ul, .sort ul {
-    padding: 0;
-    margin: 0;
+.main-navigation ul {
+    background: #32425C;
+    box-shadow: inset 0px -5px 0px #293449;
 }
 
 .main-navigation a {
     color: var(--basic-white);
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 24px;
+    
 }
 
 .promo-block {
     font-family: 'Cuprum', sans-serif;
     color: var(--basic-white);
-}
-
-.promo-advantages h3 {
-    font-size: 24px;
-    line-height: 30px;
-    font-style: bold;
 }
 
 .promo-advantages a {
@@ -164,6 +246,16 @@ img {
     color: var(--basic-white);
     width: 135px;
     height: 38px;
+}
+
+.promo-advantages a:hover {
+    background-color: rgba(197, 197, 197, 0.3);;
+    color: var(--basic-white);
+}
+
+.promo-advantages a:active {
+    background-color: rgba(169, 169, 169, 0.3);;
+    color: var(--basic-white);
 }
 
 li.promo-materials {
@@ -186,23 +278,10 @@ li.promo-delivery {
     background-color: var(--special-yellow-2);
 }
 
-div.popular-header {
-    background-color: var(--basic-greylight-popular);
-    font-family: 'Cuprum', sans-serif;
-}
-
-.popular-header h2, .services-block h2, .services-detail h3, .about h2, .contacts h2, .perf-about h2 {
-    text-transform: uppercase;
-    font-size: 30px;
+.promo-advantages h3 {
+    font-size: 24px;
     line-height: 30px;
-    font-style: normal;
-    font-weight: normal;
-}
-
-.popular-header a, .contacts a, .about a {
-    background-color: var(--basic-red);
-    color: var(--basic-white);
-    text-transform: uppercase;
+    font-style: bold;
 }
 
 .card-new {
@@ -214,10 +293,30 @@ div.popular-header {
     transform: rotate(45deg);
     color: var(--basic-white);
     background-color: var(--basic-red);
+    text-transform: uppercase;
+}
+
+.promo-slider {
+    background-color: var(--basic-black);
+}
+
+div.popular-header {
+    background-color: var(--basic-greylight-popular);
+}
+
+.popular-header h2, .services-block h2, .services-detail h3, .about h2, .contacts h2, .perf-about h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.item-cards {
+    font-family: 'PT Sans', sans-serif;
 }
 
 .card-name {
-    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -237,6 +336,59 @@ div.popular-header {
     background-color: var(--basic-red);
 }
 
+.card-buy {
+    background: var(--basic-green);
+    color: var(--basic-white);
+    box-shadow: inset 0px -3px 0px #367315;
+    border-radius: 2px;
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    width: 135px;
+    height: 38px;
+    border: 0px;
+}
+
+.card-buy:hover {
+    background-color: var(--success);
+}
+
+.card-buy:active {
+    background-color: var(--active-green);
+}
+
+.card-bookmark {
+    background: var(--basic-white);
+    color: var(--blue);
+    border-radius: 2px;
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    width: 135px;
+    height: 38px;
+    border: 3px solid var(--basic-green); 
+    border-radius: 2px;
+}
+
+.card-bookmark:hover {
+    border-color: var(--blue);
+}
+
+.card-bookmark:active {
+    background: var(--basic-white);
+    opacity: 0.5;
+}
+
+.services-block {
+    background-color: var(--basic-background);
+}
+
 .services-block p, .about p, .contacts p {
     font-family: 'PT Sans', sans-serif;
     font-style: normal;
@@ -250,36 +402,65 @@ div.popular-header {
     background-color: var(--basic-white);
 }
 
-.about h2, .contacts h2 {
-    font-family: 'Cuprum', sans-serif;
-    text-transform: uppercase;;
-    font-size: 30px;
-    line-height: 30px;
-}
-
 .about ul {
-    font-family: 'Cuprum', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
 }
 
-.footer-main, .footer-top a, .footer-bottom p {
-    font-family: 'Cuprum', sans-serif;
+.footer-main a {
     color: var(--basic-white);
+}
+
+.footer-top a:hover {
+    color: var(--basic-white);
+    text-decoration: underline;
+}
+
+.footer-top a:active {
+    color: var(--basic-background);
+    text-decoration: none;
 }
 
 .footer-top, .footer-mid {
     background-color: var(--blue);
 }
 
-.footer-bottom {
+.footer-mid a {
+    color: var(--special-yellowlight);
+}
+
+.footer-mid a:hover {
+    color: var(--special-yellowlight);
+    text-decoration: underline;
+}
+
+.footer-mid a:active {
+    color: rgba(255, 209, 128, 0.5);
+    text-decoration: none;
+}
+
+.footer-mid, .footer-bottom {
     background-color: var(--basic-blue);
 }
 
-.footer-mid a, .footer-bottom a {
+.footer-bottom p, .footer-mid p {
+    color: var(--basic-white);
+}
+
+.footer-bottom a {
     color: var(--special-yellowlight);
+}
+
+.footer-bottom a:hover {
+    color: var(--special-yellowlight);
+    text-decoration: underline;
+}
+
+.footer-bottom a:active {
+    color: var(--basic-red);
+    text-decoration: none;
 }
 
 .page-nav a {
@@ -309,11 +490,34 @@ div.popular-header {
     background-color: var(--sort-grey);
 }
 
-.header-usernav a {
+.breadcrumbs a {
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
     color: var(--basic-black);
 }
 
+.filters-button {
+    width: 220px;
+    height: 38px;
+    border: 1px solid var(--basic-greylight-border);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+}
+
+.history, .profile {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--blue);
+}
+
 .usernav-button {
+    background: rgba(0, 0, 0, 0.0001);
+    color: var(--basic-black);
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
