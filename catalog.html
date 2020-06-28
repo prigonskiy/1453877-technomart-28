@@ -7,18 +7,18 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header class="header-main"> <!--контейнер для шапки: серый фон-->
-      <div class="header-top"> <!--контейнер для верхней строки шапки: синий фон-->
-        <div class="container"> <!--центровщик верхней строки: ширина, позиция-->
-          <a class="header-logo">
-            <img src="img/content_logo-header.svg" width="108" height: "18">              
+  <body class="body body-catalog">
+    <header class="header-main">
+      <div class="header-top">
+        <div class="container">
+          <a class="header-logo" href="index.html">
+            <img src="img/content_logo-header.svg" width="108" height="18" alt="Техномарт">              
           </a>
           <form class="search" action="https://echo.htmlacademy.ru" method="get">
             <svg class="search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"/>
+              <path class="search-path" fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
             </svg>
-            <input type="text" placeholder="Поиск">
+            <input class="search-input" type="text" placeholder="Поиск">
           </form>
           <div class="header-buttons">
             <a href="" class="header-button bookmarks">Закладки: 0</a>
@@ -31,7 +31,7 @@
         <div class="header-bottom-usernav">
           <h1 class="header-about">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
           <address class="header-address">
-            <a href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </address>
           <div class="header-usernav-logged">
@@ -184,8 +184,8 @@
             </ul>
           </div>
           <ul class="item-cards-catalog list_no_pm"> <!--Карточки товаров-->
-            <li>
-              <article class="item-card">
+            <li class="item-card">
+              <article>
                 
                 <div class="card-img">
                   <img src="img/content_bosch-bfg-6000-thumbnail.jpg" width="144" height="128" alt="Bosch BFG 6000">
@@ -199,8 +199,8 @@
                 <span class="card-price">25500 Р.</span>
               </article>
             </li>
-            <li>
-              <article class="item-card">
+            <li class="item-card">
+              <article>
                 
                 <div class="card-img">
                   <img src="img/content_bosch-bfg-6000-thumbnail.jpg" width="144" height="128" alt="Bosch BFG 6000">
@@ -214,8 +214,8 @@
                 <span class="card-price">25500 Р.</span>
               </article>
             </li>
-            <li>
-              <article class="item-card">
+            <li class="item-card">
+              <article>
                 <span class="card-new" aria-label="Новинка"></span>
                 <div class="card-img">
                   <img src="img/content_bosch-bfg-6000-thumbnail.jpg" width="144" height="128" alt="Bosch BFG 6000">
@@ -229,8 +229,8 @@
                 <span class="card-price">25500 Р.</span>
               </article>
             </li>
-            <li>
-              <article class="item-card">
+            <li class="item-card">
+              <article>
                 <span class="card-new" aria-label="Новинка"></span>
                 <div class="card-img">
                   <img src="img/content_bosch-bfg-3000-thumbnail.jpg" width="144" height="128" alt="Bosch BFG 3000">
@@ -244,8 +244,8 @@
                 <span class="card-price">15500 Р.</span>
               </article>
             </li>
-            <li>
-              <article class="item-card">
+            <li class="item-card">
+              <article>
                 
                 <div class="card-img">
                   <img src="img/content_bosch-bfg-6000-thumbnail.jpg" width="144" height="128" alt="Bosch BFG 6000">
@@ -259,8 +259,8 @@
                 <span class="card-price">25500 Р.</span>
               </article>
             </li>
-            <li>
-              <article class="item-card">
+            <li class="item-card">
+              <article>
                 <span class="card-new" aria-label="Новинка"></span>
                 <div class="card-img">
                   <img src="img/content_bosch-bfg-2000-thumbnail.jpg" width="144" height="128" alt="Bosch BFG 2000">
@@ -274,8 +274,8 @@
                 <span class="card-price">12500 Р.</span>
               </article>
             </li>
-            <li>
-              <article class="item-card">
+            <li class="item-card">
+              <article>
                 <span class="card-new" aria-label="Новинка"></span>
                 <div class="card-img">
                   <img src="img/content_bosch-bfg-3000-thumbnail.jpg" width="144" height="128" alt="Bosch BFG 3000">
@@ -289,8 +289,8 @@
                 <span class="card-price">15500 Р.</span>
               </article>
             </li>
-            <li>
-              <article class="item-card">
+            <li class="item-card">
+              <article>
                 
                 <div class="card-img">
                   <img src="img/content_bosch-bfg-6000-thumbnail.jpg" width="144" height="128" alt="Bosch BFG 6000">
@@ -304,8 +304,8 @@
                 <span class="card-price">25500 Р.</span>
               </article>
             </li>
-            <li>
-              <article class="item-card">
+            <li class="item-card">
+              <article>
                 <span class="card-new" aria-label="Новинка"></span>
                 <div class="card-img">
                   <img src="img/content_bosch-bfg-2000-thumbnail.jpg" width="144" height="128" alt="Bosch BFG 2000">
@@ -350,7 +350,7 @@
           </ul>
         </div>
         <div class="footer-mid container">
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
           <ul class="promo-nav list_no_pm">
             <li><a href="">Материалы</a></li>
             <li><a href="">Техника</a></li>
@@ -393,6 +393,7 @@
       </div>
     </footer>
     <section class="modal modal-cart">
+      <h2 class="visually-hidden">Подтверждение добавления в корзину</h2>
       <p>Товар добавлен в корзину!</p>
       <div class="modal-cart-buttons">
         <button class="check" type="button">Оформить заказ</button>
@@ -400,5 +401,6 @@
       </div>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
+  <script src="js/script.js"></script>
   </body>
 </html>
