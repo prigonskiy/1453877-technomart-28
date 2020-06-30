@@ -2127,6 +2127,17 @@ legend.power-legend {
 
 .modal-map iframe {
     border: none;
+    position: relative;
+    z-index: 2;
+}
+
+.modal-map p {
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
 }
 
 .modal-cart {

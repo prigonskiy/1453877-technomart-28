@@ -206,10 +206,17 @@ if (page) {
     }
 
     form.addEventListener("submit", function(evt) {
-        modalFeedback.classList.remove("modal-error");
+        
         if (!form_name.value || !form_email.value || !form_text.value) {
             evt.preventDefault();
+            modalFeedback.classList.remove("modal-error");
+            modalFeedback.offsetWidth = modalFeedback.offsetWidth;
             modalFeedback.classList.add("modal-error");
-        } 
+        } else {
+            if (isStorageSupport) {
+                localStorage.setItem("name", form_name.value);
+                localStorage.setItem("mail", form_email.value);
+            }
+        }
     })
 }
