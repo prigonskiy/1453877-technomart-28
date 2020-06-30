@@ -154,6 +154,7 @@ input[type="radio"].visually-hidden {
     top: 12px;
     left: 17px;
     opacity: 0.3;
+    fill: var(--basic-white);
 }
 
 .search-input {
@@ -174,8 +175,11 @@ input[type="radio"].visually-hidden {
     outline: none;
     background-color: var(--basic-white);
 }
+.search-input:focus + svg {
+    fill: var(--basic-red);
+}
 
-.search:focus-within::after {
+/*.search:focus-within::after {
     content: "";
     position: absolute;
     background-image: url("../img/decor_icon-search_red.svg");
@@ -187,6 +191,7 @@ input[type="radio"].visually-hidden {
     left: 17px;
 
 }
+*/
 
 .search-input::placeholder {
     font-size: 18px;
