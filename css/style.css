@@ -35,6 +35,14 @@
     --form-background: #F4F4F4;
     --buttons-background: #F1F1F1;
     --footer-gray: #F3F5F7;
+    --shadow-black: rgba(0, 0, 0, 0.24);
+    --halfwhite: rgba(255, 255, 255, 0.5);
+    --glasswhite: rgba(255, 255, 255, 0.3);
+    --hover-link: rgba(197, 197, 197, 0.3);
+    --active-link: rgba(169, 169, 169, 0.3);
+    --smoky-black: rgba(0, 0, 0, 0.15);
+    --dark-black: rgba(0, 0, 0, 0.3);
+    --toggle-shadow: rgba(207, 207, 207, 0.3);
 }
 
 
@@ -136,7 +144,7 @@ input[type="radio"].visually-hidden {
     width: 108px;
     background-color: var(--basic-red);
     padding: 12px 56px;
-    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: inset 0px -5px 0px var(--shadow-black);
 }
 
 .header-logo:active {
@@ -263,7 +271,7 @@ input[type="radio"].visually-hidden {
 }
 
 .bookmarks:active, .cart:active {
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--halfwhite);
     background-color: var(--header-button-active);
 }
 
@@ -284,7 +292,7 @@ input[type="radio"].visually-hidden {
 
 .checkout:active {
     background-color: var(--basic-green);
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--halfwhite);
 }
 
 .header-bottom {
@@ -559,7 +567,7 @@ input[type="radio"].visually-hidden {
 
 .main-navigation a:active {
     background-color: var(--main-navigation-active);
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--halfwhite);
 }
 
 
@@ -630,7 +638,7 @@ input[type="radio"].visually-hidden {
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: var(--glasswhite);
     min-width: 135px;
     max-width: 180px;
     padding-top: 10px;
@@ -641,11 +649,11 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-link:hover {
-    background-color: rgba(197, 197, 197, 0.3);
+    background-color: var(--hover-link);
 }
 
 .promo-link:active {
-    background-color: rgba(169, 169, 169, 0.3);
+    background-color: var(--active-link);
 }
 
 .promo-materials {
@@ -905,7 +913,7 @@ input[type="radio"].visually-hidden {
 }
 
 .item-card:hover {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px var(--smoky-black);
 }
 
 .item-card:hover .card-img {
@@ -1069,11 +1077,11 @@ input[type="radio"].visually-hidden {
 }
 
 .vendor-cards li:hover {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px var(--smoky-black);
 }
 
 .vendor-cards li:active {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px var(--smoky-black);
     opacity: 0.5;
 }
 
@@ -1630,7 +1638,7 @@ p.service-text {
     font-weight: normal;
     font-size: 13px;
     line-height: 18px;
-    color: rgba(0, 0, 0, 0.3);
+    color: var(--dark-black);
 }
 
 .sort-item:hover {
@@ -1748,7 +1756,7 @@ a.sort-active, a.sort-active:hover, a.sort-active:active, .sort-item:active {
     border: 8px solid var(--basic-white);
     background-color: var(--toggle-color);
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(207, 207, 207, 0.3);
+    box-shadow: 0 2px 1px 0 var(--toggle-shadow);
     cursor: pointer;
 }
 
@@ -2028,7 +2036,7 @@ legend.power-legend {
     color: var(--basic-black);
     background-color: var(--basic-white);
     border-top: 7px solid var(--basic-red);
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px var(--smoky-black);
 }
 
 .modal-map {
