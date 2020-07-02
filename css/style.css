@@ -309,27 +309,28 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
     line-height: 23px;
     color: var(--basic-red);
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 .header-address {
-    width: 300px;
+    margin-left: 25px;
 }
 
 .header-address a {
-    display: block;
-    width: 270px;
-    height: 45px;
+    display: inline-block;
+    box-sizing: border-box;
     position: relative;
     color: var(--basic-red);
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
+    vertical-align: middle;
+    padding-bottom: 5px;
     padding-top: 4px;
-    padding-left: 74px;
+    padding-left: 71px;
+    padding-right: 42px;
     border: 3px solid #FFFFFF;
-    box-sizing: border-box;
 }
 
 .header-address a::before {
@@ -361,7 +362,7 @@ input[type="radio"].visually-hidden {
     justify-content: flex-end;
     align-items: center;
     width: 300px;
-    min-height: 45px;
+    align-self: flex-start;
 }
 
 .signin, .signup {
@@ -890,6 +891,13 @@ input[type="radio"].visually-hidden {
     padding: 0;
     margin: 0;
     margin-top: 20px;
+}
+
+.item-cards-catalog {
+    margin-top: 28px;
+}
+
+.item-cards-main {
     margin-bottom: 50px;
 }
 
@@ -1013,7 +1021,7 @@ input[type="radio"].visually-hidden {
     margin-left: auto;
     margin-right: auto;
     margin-top: 9px;
-    padding-bottom: 97px;
+    padding-bottom: 60px;
 }
 
 .card-original-price {
@@ -1042,7 +1050,7 @@ input[type="radio"].visually-hidden {
     padding-top: 10px;
     position: absolute;
     bottom: 21px;
-    left: 45px;
+    left: 40px;
     color: var(--basic-white);
     font-family: 'PT Sans', Arial, sans-serif;
     font-style: normal;
@@ -1098,48 +1106,56 @@ input[type="radio"].visually-hidden {
 }
 
 .vendor-bosch {
+    background-color: var(--basic-white);
     background-image: url("../img/background_logo_bosch.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .vendor-makita {
+    background-color: var(--basic-white);
     background-image: url("../img/background_logo_makita.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .vendor-dewalt {
+    background-color: var(--basic-white);
     background-image: url("../img/background_logo_dewalt.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .vendor-interskol {
+    background-color: var(--basic-white);
     background-image: url("../img/background_logo_interskol.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .vendor-hitachi {
+    background-color: var(--basic-white);
     background-image: url("../img/background_logo_hitachi.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .vendor-lg {
+    background-color: var(--basic-white);
     background-image: url("../img/background_logo_lg.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .vendor-aeg {
+    background-color: var(--basic-white);
     background-image: url("../img/background_logo_aeg.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .vendor-metabo {
+    background-color: var(--basic-white);
     background-image: url("../img/background_logo_metabo.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -1306,11 +1322,11 @@ p.service-text {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    margin-top: 72px;
+    margin-bottom: 64px;
 }
 
-.about-contacts-block h2, .about-contacts-block p {
+.about-contacts-block h2, .about-contacts-block p, .delivery-companies-list li {
     padding: 0;
     margin: 0;
 }
@@ -1326,16 +1342,20 @@ p.service-text {
     line-height: 30px;
     text-transform: uppercase;
     color: var(--basic-black);
+    margin-bottom: 24px;
 }
 
 .about-contacts-block p {
-    margin-top: 24px;
     font-family: 'PT Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
-    margin-bottom: 2px;
+    margin-bottom: 26px;
+}
+
+.about-contacts-block p:last-of-type {
+    margin-bottom: 1px;
 }
 
 .about .list_no_pm {
@@ -1344,13 +1364,17 @@ p.service-text {
 
 }
 
-.about li {
+.delivery-companies-list li {
     position: relative;
-    margin-bottom: 12px;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.delivery-companies-list li:last-child {
+    margin-bottom: 20px;
 }
 
 .about li::before {
@@ -1371,9 +1395,12 @@ p.service-text {
 }
 
 .contacts .map {
+    background-color: var(--basic-grey);
     display: block;
     margin-top: 30px;
     margin-bottom: 30px;
+    width: 300px;
+    height: 158px;
 }
 
 .contacts .red_button {
@@ -1391,26 +1418,24 @@ p.service-text {
     background-color: var(--basic-blue);
 }
 
-
-
 .footer-top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 .second-nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin-top: 37px;
-    width: 600px;
+    width: 650px;
 }
 
 .second-nav li {
-    margin-left: 55px;
+    margin-left: 59px;
 }
 
 
@@ -1442,25 +1467,27 @@ p.service-text {
     font-size: 18px;
     line-height: 24px;
     color: var(--footer-gray);
+    margin-left: 3px;
 }
 
 .footer-mid {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .promo-nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-content: flex-start;
+    margin-top: 4px;
     width: 600px;
 }
 
 .promo-nav li {
-    margin-left: 55px;
+    margin-left: 59px;
 }
 
 .promo-nav a {
@@ -1488,12 +1515,11 @@ p.service-text {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 34px;
-    padding-bottom: 29px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .footer-copyright {
-    width: 227px;
     margin: 0;
     padding: 0;
     color: var(--basic-white);
@@ -1501,15 +1527,16 @@ p.service-text {
     font-weight: normal;
     font-size: 16px;
     line-height: 18px;
+    margin-left: 1px;
 }
 
 .social-feedback {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 137px;
-    margin: 0 auto;
     padding: 0;
+    margin-left: 42px;
+    margin-top: 3px;
 }
 
 .social-feedback a {
@@ -1518,19 +1545,21 @@ p.service-text {
     justify-content: center;
     width: 44px;
     height: 44px;
-    background-color: var(--social-background);
+    background: linear-gradient(0deg, var(--social-background), var(--social-background));
     color: inherit;
     border-radius: 100%;
+    margin-left: 1px;
 }
 
 .social-feedback a:hover, .social-feedback a:active {
-    background-color: var(--basic-red);
+    background: var(--basic-red);
 }
 
 .footer-contacts {
-    width: 300px;
+    width: 287px;
     display: flex;
     justify-content: space-between;
+    margin-right: 13px;
 }
 
 .footer-contacts p {
@@ -1577,8 +1606,7 @@ p.service-text {
 
 .breadcrumbs {
     grid-column: 1 / -1;
-    margin-top: 21px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     display: flex;
 }
 
@@ -1589,7 +1617,7 @@ p.service-text {
 .breadcrumbs a {
     text-transform: uppercase;
     color: var(--basic-black);
-    margin-right: 40px;
+    margin-right: 41px;
     font-style: normal;
     font-weight: normal;
     font-family: "PT Sans", Arial, sans-serif;
@@ -1608,16 +1636,11 @@ p.service-text {
     right: 15px;
 }
 
-
-
 .sort {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     font-family: 'PT Sans', Arial, sans-serif;
-    padding-left: 19px;
-    padding-right: 17px;
     background-color: var(--sort-grey);
-    margin-bottom: 20px;
     text-transform: uppercase;
 }
 
@@ -1627,11 +1650,20 @@ p.service-text {
 
 .sort-type {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 353px;
-    margin-top: 9px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    margin-left: 140px;
 }
 
+.sort-type li {
+    margin-right: 65px;
+}
+
+.sort-type li:last-child {
+    margin-right: 0;
+}
 
 .sort-item {
     border-bottom: 1px dotted var(--basic-red);
@@ -1641,6 +1673,8 @@ p.service-text {
     line-height: 18px;
     color: var(--dark-black);
 }
+
+
 
 .sort-item:hover {
     color: var(--basic-black);
@@ -1656,12 +1690,14 @@ a.sort-active, a.sort-active:hover, a.sort-active:active, .sort-item:active {
 .sort-up-down {
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 46px;
 }
 
 .sort-up-down li:first-child {
     margin-right: 21px;
 }
+
 
 .up-down:hover svg path {
     fill: var(--basic-black);
@@ -1681,7 +1717,6 @@ a.sort-active, a.sort-active:hover, a.sort-active:active, .sort-item:active {
     font-size: 13px;
     line-height: 18px;
     color: var(--basic-black);
-    width: 202px;
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1692,7 +1727,6 @@ a.sort-active, a.sort-active:hover, a.sort-active:active, .sort-item:active {
 .filter-form {
     font-family: 'PT Sans', Arial, sans-serif;
     color: var(--basic-black);
-    
 }
 
 
@@ -1702,7 +1736,7 @@ a.sort-active, a.sort-active:hover, a.sort-active:active, .sort-item:active {
     padding: 0;
     border: none;
     border-bottom: 1px solid var(--sort-grey);
-    margin-bottom: 16px;
+    padding-bottom: 25px;
     margin-top: 14px;
 }
 
@@ -1795,6 +1829,10 @@ a.sort-active, a.sort-active:hover, a.sort-active:active, .sort-item:active {
     padding-left: 35px;
 }
 
+.filter-option:last-child {
+    margin-bottom: 4px;
+}
+
 .filter-option label {
     position: relative;
     display: block;
@@ -1835,6 +1873,18 @@ a.sort-active, a.sort-active:hover, a.sort-active:active, .sort-item:active {
     opacity: 0.3;
 }
 
+.filter-input-checkbox:disabled + label::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/decor_icon_checkbox-off_disabled.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    left: -35px;
+    top: -2px;
+    width: 23px;
+    height: 23px;
+}
+
 .filter-input-checkbox:checked + label::before {
     content: "";
     position: absolute;
@@ -1858,6 +1908,19 @@ a.sort-active, a.sort-active:hover, a.sort-active:active, .sort-item:active {
     width: 27px;
     height: 23px;
 }
+
+.filter-input-checkbox:checked:disabled + label::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/decor_icon_checkbox-on_disabled.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    left: -35px;
+    top: -2px;
+    width: 27px;
+    height: 23px;
+}
+
 
 .filter-input-radio + label:before {
     content: "";
@@ -1895,10 +1958,34 @@ a.sort-active, a.sort-active:hover, a.sort-active:active, .sort-item:active {
     height: 25px;
 }
 
+.filter-input-radio:disabled + label:before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/decor_icon_radio-off_disabled.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    left: -35px;
+    top: -3px;
+    width: 25px;
+    height: 25px;
+}
+
 .filter-input-radio:checked:hover + label:before {
     content: "";
     position: absolute;
     background-image: url("../img/decor_icon_radio-on_hover.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    left: -35px;
+    top: -3px;
+    width: 25px;
+    height: 25px;
+}
+
+.filter-input-radio:checked:disabled + label:before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/decor_icon_radio-on_disabled.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
     left: -35px;
@@ -1916,6 +2003,7 @@ legend.vendor-legend {
 }
 
 legend.power-legend {
+    padding-top: 3px;
     margin-bottom: 23px;
 }
 
@@ -1927,9 +2015,12 @@ legend.power-legend {
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
     width: 220px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-top: 10px;
     border: 1px solid var(--basic-greylight-border);
     background-color: transparent;
 }
@@ -1984,7 +2075,7 @@ legend.power-legend {
 
 .perf-about .container {
     padding-top: 64px;
-    padding-bottom: 68px;
+    padding-bottom: 71px;
 }
 
 .perf-about h2 {
